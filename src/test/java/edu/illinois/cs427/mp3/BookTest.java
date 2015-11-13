@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import java.util.Random;
 import java.util.*;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
@@ -13,6 +14,9 @@ public class BookTest {
     /**
      * Tests default constructor Book(String t, String a).
      */
+
+    Random rand = new Random();;
+
     @Test
     public void testBookConstructor1() {
         //TODO implement this
@@ -115,5 +119,13 @@ public class BookTest {
         ArrayList<Collection> cont_collectn = (ArrayList<Collection>) b.getContainingCollections();
         assertTrue(cont_collectn.get(0).getName().equals("CS"));
         assertTrue(cont_collectn.get(1).getName().equals("Engineering"));
+    }
+
+    @Test
+    public void flakyTest1() {
+        //TODO implement this
+        int randomNum = rand.nextInt(100);
+        System.out.println(randomNum);
+        assertTrue(randomNum > 50);
     }
 }
