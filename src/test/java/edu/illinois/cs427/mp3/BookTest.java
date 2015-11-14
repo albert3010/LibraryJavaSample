@@ -128,4 +128,28 @@ public class BookTest {
         System.out.println(randomNum);
         assertTrue(randomNum > 50);
     }
+    
+    @Test
+    public void flakyTest2() {
+        //TODO implement this
+        int randomNum = rand.nextInt(100);
+        System.out.println(randomNum);
+        assertTrue(randomNum > 50);
+    }
+    
+    @Test
+    public void flakyTest3() {
+        //TODO implement this
+        int randomNum = rand.nextInt(100);
+        System.out.println(randomNum);
+        assertTrue(randomNum > 50);
+    }
+    
+    @Test
+    public void flakyTest4() {
+        //TODO implement this
+        int randomNum = rand.nextInt(100);
+        System.out.println(randomNum);
+        assertTrue(randomNum > 50);
+    }
 }
