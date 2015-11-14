@@ -48,18 +48,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.19</version>
           <configuration>
-              <forkMode>once</forkMode>
-              <!-- these settings are mandatory to avoid SureFire giving a bogus system property to the web container -->
-              <useSystemClassLoader>false</useSystemClassLoader>
-              <useManifestOnlyJar>false</useManifestOnlyJar>
-              <failIfNoTests>false</failIfNoTests>
-              <!-- The number of times each failing test will be rerun. -->
               <rerunFailingTestsCount>4</rerunFailingTestsCount>
-              <runOrder>alphabetical</runOrder>
-              <systemPropertyVariables>
-                  <basedir>${basedir}</basedir>
-                  <project.version>${project.version}</project.version>
-              </systemPropertyVariables>
           </configuration>
       </plugin>
       
