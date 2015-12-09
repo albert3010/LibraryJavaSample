@@ -152,4 +152,10 @@ public class BookTest {
         System.out.println(randomNum);
         assertTrue(randomNum > 50);
     }
+
+    @Test
+    public void failTest() {
+        //TODO implement this
+        assertTrue(false);
+    }
 }

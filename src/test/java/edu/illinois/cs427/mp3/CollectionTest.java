@@ -171,4 +171,9 @@ public class CollectionTest {
     	
     	assertTrue(!cs.getElements().contains(os) );
     }
+    
+    @Test
+    public void testFailureForFlaky(){
+    	assertTrue(false);
+    }
 }
