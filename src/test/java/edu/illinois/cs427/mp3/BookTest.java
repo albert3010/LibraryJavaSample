@@ -153,9 +153,4 @@ public class BookTest {
         assertTrue(randomNum > 50);
     }
 
-    @Test
-    public void failTest() {
-        //TODO implement this
-        assertTrue(false);
-    }
 }
